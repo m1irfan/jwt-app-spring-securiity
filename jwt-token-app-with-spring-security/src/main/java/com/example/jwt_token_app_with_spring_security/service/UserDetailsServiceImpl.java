@@ -24,10 +24,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		if(user == null) {
 			throw new UsernameNotFoundException("User Not Found!");
 		}
-		return User.builder()
-		.username(username)
-		.password(user.getPassword())
-		.build();
+		
+		return new MyUser(user);
 	}
 
 

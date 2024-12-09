@@ -22,7 +22,7 @@ public class JwtService {
 	private SecretKey secretKey = Jwts.SIG.HS256.key().build();
 
 	
-	private long EXPIRATION_TIME = 1000*60*2;
+	private long EXPIRATION_TIME = 1000*60*5;
 	
 	//private SecretKey secretKey = Keys.hmacShaKeyFor(Decoders.BASE64.decode(key));
 	
